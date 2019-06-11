@@ -41,8 +41,6 @@ export default class MediaForm extends React.Component {
      .collection('mediaEntries')
      .add({entry: this.state.formControls});
 
-    // TODO: fix
-
     const formControls = {...this.state.formControls}
     formControls.title = '';
     formControls.author = '';

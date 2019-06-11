@@ -52,6 +52,7 @@ class BrowsePage extends React.Component {
 
 
   render() {
+    console.log(process.env.NYT_KEY)
     if (this.state.isLoading) {
       return <div>Loading...</div>;
     }
@@ -71,7 +72,10 @@ class BrowsePage extends React.Component {
               </div>
     })
     return (
-      <div className='book-list'>{topNYTBooks}</div>
+      <div>
+        <h2>Browse books from the New York Times bestsellers list...</h2>
+        <div className='book-list'>{topNYTBooks}</div>
+      </div>
       );
 
   }

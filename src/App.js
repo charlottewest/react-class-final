@@ -5,6 +5,7 @@ import BrowsePage from './BrowsePage'
 
 import Home from './Home';
 import './App.css';
+require('dotenv').config()
 
 const mediaTypes = [
   'Books',
